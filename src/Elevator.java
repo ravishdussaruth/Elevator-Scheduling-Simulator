@@ -195,7 +195,7 @@ public class Elevator {
             @Override
             public void run() {
 
-                int Z = new Double(Math.ceil((double) getN() / getL())).intValue();
+                int Z = (int) (Math.ceil((double) getN() / getL()));
 
                 while (true){
 

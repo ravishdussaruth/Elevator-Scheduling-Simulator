@@ -15,8 +15,8 @@ public class Zoning {
      */
     public int choseElevator(int L, int N, int floor){
 
-        int Z = new Double(Math.ceil((double) N / L)).intValue(); // Z is the number of zones
+        int Z = (int) Math.ceil((double) N / L); // Z is the number of zones
 
-        return (new Double(Math.floor((double) floor / Z)).intValue());
+        return (int) (Math.floor((double) floor / Z));
     }
 }
